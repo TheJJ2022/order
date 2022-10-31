@@ -1,6 +1,6 @@
 -- 1.请创建db1数据库完成本项目
 -- 2.下面是MySQL语句
--- 3.请在db1数据下建立三张表tb_user,goods,merchant
+-- 3.请在db1数据下建立三张表
 
 -- 删除
 DROP TABLE if EXISTS tb_user;
