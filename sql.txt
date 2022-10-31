@@ -1,0 +1,50 @@
+-- 1.请创建db1数据库完成本项目
+-- 2.下面是MySQL语句
+-- 3.请在db1数据下建立三张表
+
+-- 删除
+DROP TABLE if EXISTS tb_user;
+DROP TABLE IF EXISTS goods;
+DROP TABLE IF EXISTS merchant;
+-- 创建表
+-- 用户表
+CREATE TABLE tb_user(
+-- 用户编号
+id int PRIMARY KEY auto_increment,
+-- 用户账户
+user_account VARCHAR(20) not NULL,
+-- 用户密码
+user_password VARCHAR(20) not null,
+-- 用户姓名
+user_name VARCHAR(20) NOT NULL,
+-- 用户性别
+user_sex int,
+-- 用户权限
+user_status int
+);
+
+-- 商品表
+CREATE TABLE goods(
+-- 商品编号
+id int PRIMARY KEY auto_increment,
+-- 商品名称
+goods_name VARCHAR(20) not null,
+-- 商品类别
+goods_category int,
+-- 启用状态
+user_status int
+);
+
+-- 商家表
+CREATE TABLE merchant(
+-- 商家编号
+id INT PRIMARY KEY auto_increment,
+-- 商家名称
+merchant_name VARCHAR(20) not NULL,
+-- 售卖商品编号
+goods_id int,
+-- 启用状态
+merchant_status int,
+-- 添加外键关联goods_id 和 商品表中的id
+CONSTRAINT fk_merchant_goods FOREIGN KEY(goods_id) REFERENCES goods(id)
+);
