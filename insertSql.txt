@@ -1,0 +1,26 @@
+-- 插入基本数据内容
+
+-- 用户表
+INSERT INTO tb_user(user_account,user_password,user_name,user_sex,user_status) VALUES
+('202013','202013','李三',1,1),
+('admin','admin','管理员',1,0),
+('202210','202010','甜甜',0,1),
+('199010','199010','李大嘴',1,2),
+('199191','199191','王碧琪',0,2);
+
+-- 商品表
+INSERT INTO goods(goods_name,goods_category,goods_status)VALUES
+('水果捞',3,1),
+('雪菜',2,1),
+('香飘飘',1,1),
+('鱼香肉丝',0,1),
+('鸡腿',0,1),
+('可乐',1,0);
+
+-- 商家表
+INSERT INTO merchant(merchant_name,goods_id,merchant_status)VALUES
+('一餐一号',1,1),
+('三餐三号',2,1),
+('一餐三号',3,1),
+('三餐一号',1,1),
+('二餐二号',4,0);

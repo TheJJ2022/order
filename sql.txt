@@ -32,7 +32,7 @@ goods_name VARCHAR(20) not null,
 -- 商品类别
 goods_category int,
 -- 启用状态
-user_status int
+goods_status int
 );
 
 -- 商家表

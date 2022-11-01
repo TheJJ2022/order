@@ -8,9 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>默认启动</title>
   </head>
   <body>
-  $END$
+  <%
+    //直接跳转到主页面
+    response.sendRedirect("homepage.jsp");
+  %>
   </body>
 </html>
